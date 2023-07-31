@@ -1,0 +1,106 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600&family=Rubik:wght@400;500;600&display=swap');
+
+
+/* Estilos para los posts */
+.fp-post-container {
+    display: grid;
+    grid-template-columns: 26% 74%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "img-post post-contenido";
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.fp-image{
+    grid-area: img-post;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.fp-image img{
+    height: auto;
+    display: block;
+    width: 90%;
+    min-width: 260px;
+}
+
+.fp-post-contenido{
+    grid-area: post-contenido;
+    padding-left: 10px;
+}
+.fp-titulo{
+    color: #3B3E51;
+    font-family: "Rubik", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.fp-resumen{
+    color: #3B3E51;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+  
+  /* Estilos para el formulario de filtrado */
+ 
+  .contenedor-select {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+
+  .fp-filter{
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+.fp-filter svg{
+    line-height: 16px;
+    margin-top: -8px;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+}
+
+
+  .fp-select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    border: none;
+    border-bottom: 2px solid #147BBD;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000010;
+    color: #333;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    padding: 13px 28px;
+    width: 100%;
+  }
+
+  .fp-select option{
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
